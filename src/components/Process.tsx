@@ -30,8 +30,18 @@ export default function Process() {
   ];
 
   return (
-    <section id="process" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="process" className="py-24 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+          alt="Background Process" 
+          className="w-full h-full object-cover opacity-5"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/90 to-white"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-unugha-green font-bold tracking-wide uppercase text-sm mb-3">Alur Sertifikasi</h2>
           <h3 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">

@@ -30,8 +30,17 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="grid md:grid-cols-2">
-            <div className="p-10 bg-unugha-green text-white flex flex-col justify-between">
-              <div>
+            <div className="p-10 bg-unugha-green text-white flex flex-col justify-between relative overflow-hidden">
+              {/* Background Pattern */}
+              <div className="absolute inset-0 z-0 opacity-10">
+                <img 
+                  src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                  alt="Pattern" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
+              <div className="relative z-10">
                 <h3 className="text-2xl font-serif font-bold mb-4">Butuh Bantuan?</h3>
                 <p className="text-white/80 mb-8 leading-relaxed">
                   Tim kami siap membantu Anda memahami proses sertifikasi halal. Silakan isi formulir di samping atau hubungi kami langsung.
@@ -49,7 +58,7 @@ export default function Contact() {
                 </div>
               </div>
               
-              <div className="mt-10">
+              <div className="mt-10 relative z-10">
                 <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4">
                   <Send className="w-8 h-8" />
                 </div>

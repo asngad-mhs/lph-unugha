@@ -29,14 +29,28 @@ export default function About() {
   return (
     <section id="about" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-unugha-green font-bold tracking-wide uppercase text-sm mb-3">Tentang Kami</h2>
-          <h3 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
-            Lembaga Pemeriksa Halal UNUGHA
-          </h3>
-          <p className="text-lg text-slate-600 leading-relaxed">
-            LPH UNUGHA adalah unit pelaksana teknis di bawah Universitas Nahdlatul Ulama Al Ghazali yang bertugas melakukan kegiatan pemeriksaan dan/atau pengujian terhadap kehalalan produk. Kami berkomitmen membantu UMKM dan industri dalam mewujudkan ekosistem halal di Indonesia.
-          </p>
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="relative">
+            <div className="absolute -inset-4 bg-unugha-green/10 rounded-3xl transform -rotate-3"></div>
+            <img 
+              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1632&q=80" 
+              alt="Tim LPH UNUGHA" 
+              className="relative rounded-2xl shadow-xl w-full object-cover h-[400px]"
+            />
+          </div>
+          
+          <div>
+            <h2 className="text-unugha-green font-bold tracking-wide uppercase text-sm mb-3">Tentang Kami</h2>
+            <h3 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-6">
+              Lembaga Pemeriksa Halal UNUGHA
+            </h3>
+            <p className="text-lg text-slate-600 leading-relaxed mb-6">
+              LPH UNUGHA adalah unit pelaksana teknis di bawah Universitas Nahdlatul Ulama Al Ghazali yang bertugas melakukan kegiatan pemeriksaan dan/atau pengujian terhadap kehalalan produk.
+            </p>
+            <p className="text-slate-600 leading-relaxed">
+              Kami berkomitmen membantu UMKM dan industri dalam mewujudkan ekosistem halal di Indonesia dengan standar pelayanan yang profesional, transparan, dan akuntabel.
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
