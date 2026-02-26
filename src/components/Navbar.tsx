@@ -33,9 +33,9 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
             <img 
-              src="/logo-placeholder.svg" 
+              src="https://drive.google.com/uc?export=view&id=1iN-VpUPUB_dSFtZbRqxCDbpWYM1h4Bpp" 
               alt="Logo LPH UNUGHA" 
-              className="h-12 w-auto object-contain group-hover:opacity-90 transition-opacity" 
+              className="h-16 w-auto object-contain group-hover:opacity-90 transition-opacity" 
             />
             <div>
               <h1 className={`font-serif font-bold text-xl leading-none ${isScrolled ? 'text-slate-900' : 'text-slate-900 lg:text-white'}`}>
