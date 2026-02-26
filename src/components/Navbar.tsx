@@ -53,7 +53,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="#contact-form"
               className="px-5 py-2.5 bg-unugha-green text-white text-sm font-medium rounded-full hover:bg-green-800 transition-colors shadow-lg shadow-green-900/20"
             >
               Daftar Sekarang
@@ -91,7 +91,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#contact"
+                href="#contact-form"
                 className="block w-full text-center px-5 py-3 bg-unugha-green text-white font-medium rounded-lg hover:bg-green-800 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
