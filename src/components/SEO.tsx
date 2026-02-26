@@ -13,7 +13,7 @@ export default function SEO({
   title = "LPH UNUGHA - Lembaga Pemeriksa Halal Terpercaya", 
   description = "Lembaga Pemeriksa Halal (LPH) Universitas Nahdlatul Ulama Al Ghazali (UNUGHA). Mitra strategis sertifikasi halal yang cepat, akurat, dan profesional.",
   keywords = "LPH UNUGHA, Lembaga Pemeriksa Halal, Sertifikasi Halal, Halal Indonesia, UNUGHA Cilacap, Audit Halal, BPJPH",
-  image = "https://drive.google.com/uc?export=view&id=1Xd7qOkJIIhQBDWYvoNHQdjDAl_vLtWeL",
+  image = "https://drive.google.com/uc?export=view&id=1iN-VpUPUB_dSFtZbRqxCDbpWYM1h4Bpp",
   url = "https://lph.unugha.ac.id"
 }: SEOProps) {
   const siteTitle = title;

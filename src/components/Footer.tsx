@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="space-y-6">
             <a href="#home" className="flex items-center gap-3 inline-flex group">
               <img 
-                src="https://drive.google.com/uc?export=view&id=1Xd7qOkJIIhQBDWYvoNHQdjDAl_vLtWeL" 
+                src="https://drive.google.com/uc?export=view&id=1iN-VpUPUB_dSFtZbRqxCDbpWYM1h4Bpp" 
                 alt="Logo LPH UNUGHA" 
                 className="h-16 w-auto object-contain bg-white rounded-lg p-1 group-hover:opacity-90 transition-opacity" 
               />

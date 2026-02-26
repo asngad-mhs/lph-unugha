@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
             <img 
-              src="https://drive.google.com/uc?export=view&id=1Xd7qOkJIIhQBDWYvoNHQdjDAl_vLtWeL" 
+              src="https://drive.google.com/uc?export=view&id=1iN-VpUPUB_dSFtZbRqxCDbpWYM1h4Bpp" 
               alt="Logo LPH UNUGHA" 
               className="h-20 w-auto object-contain group-hover:opacity-90 transition-opacity" 
             />
