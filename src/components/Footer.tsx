@@ -8,17 +8,17 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Info */}
           <div className="space-y-6">
-            <div className="flex items-center gap-3">
+            <a href="#home" className="flex items-center gap-3 inline-flex group">
               <img 
                 src="/logo-placeholder.svg" 
                 alt="Logo LPH UNUGHA" 
-                className="h-12 w-auto object-contain bg-white rounded-lg p-1" 
+                className="h-12 w-auto object-contain bg-white rounded-lg p-1 group-hover:opacity-90 transition-opacity" 
               />
               <div>
-                <h3 className="font-serif font-bold text-xl">LPH UNUGHA</h3>
+                <h3 className="font-serif font-bold text-xl group-hover:text-unugha-gold transition-colors">LPH UNUGHA</h3>
                 <p className="text-xs text-slate-400">Universitas Nahdlatul Ulama Al Ghazali</p>
               </div>
-            </div>
+            </a>
             <p className="text-slate-400 text-sm leading-relaxed">
               Mitra terpercaya dalam sertifikasi halal. Kami berkomitmen menjaga kehalalan produk untuk kemaslahatan umat.
             </p>

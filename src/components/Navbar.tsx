@@ -31,11 +31,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <a href="#home" className="flex items-center gap-3 group">
             <img 
               src="/logo-placeholder.svg" 
               alt="Logo LPH UNUGHA" 
-              className="h-12 w-auto object-contain" 
+              className="h-12 w-auto object-contain group-hover:opacity-90 transition-opacity" 
             />
             <div>
               <h1 className={`font-serif font-bold text-xl leading-none ${isScrolled ? 'text-slate-900' : 'text-slate-900 lg:text-white'}`}>
@@ -45,7 +45,7 @@ export default function Navbar() {
                 Lembaga Pemeriksa Halal
               </p>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
