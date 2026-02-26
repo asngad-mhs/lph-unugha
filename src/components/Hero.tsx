@@ -36,10 +36,10 @@ export default function Hero() {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#contact"
+                href="#contact-form"
                 className="inline-flex items-center justify-center px-8 py-4 bg-unugha-gold text-green-950 font-bold rounded-full hover:bg-yellow-400 transition-all transform hover:scale-105 shadow-lg shadow-yellow-500/20"
               >
-                Mulai Sertifikasi
+                Daftar Sekarang
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
               <a
