@@ -35,7 +35,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact-form" className="py-24 bg-slate-50">
+    <section id="contact-form" className="py-24 bg-slate-50 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="grid md:grid-cols-2">

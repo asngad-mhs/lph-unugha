@@ -19,7 +19,7 @@ export default function Navbar() {
     { name: 'Tentang Kami', href: '#about' },
     { name: 'Layanan', href: '#services' },
     { name: 'Alur Proses', href: '#process' },
-    { name: 'Kontak', href: '#contact' },
+    { name: 'Kontak', href: '#contact-form' },
   ];
 
   return (
