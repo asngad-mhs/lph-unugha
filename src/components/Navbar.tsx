@@ -33,18 +33,10 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
             <img 
-              src="https://drive.google.com/uc?export=view&id=1iN-VpUPUB_dSFtZbRqxCDbpWYM1h4Bpp" 
+              src="https://drive.google.com/uc?export=view&id=1Xd7qOkJIIhQBDWYvoNHQdjDAl_vLtWeL" 
               alt="Logo LPH UNUGHA" 
-              className="h-16 w-auto object-contain group-hover:opacity-90 transition-opacity" 
+              className="h-20 w-auto object-contain group-hover:opacity-90 transition-opacity" 
             />
-            <div>
-              <h1 className={`font-serif font-bold text-xl leading-none ${isScrolled ? 'text-slate-900' : 'text-slate-900 lg:text-white'}`}>
-                LPH UNUGHA
-              </h1>
-              <p className={`text-xs font-sans ${isScrolled ? 'text-slate-600' : 'text-slate-600 lg:text-white/80'}`}>
-                Lembaga Pemeriksa Halal
-              </p>
-            </div>
           </a>
 
           {/* Desktop Nav */}
