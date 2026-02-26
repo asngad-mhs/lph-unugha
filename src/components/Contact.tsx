@@ -4,11 +4,13 @@ import { Send } from 'lucide-react';
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
+    company: '',
+    productType: '',
     email: '',
     message: ''
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.id]: e.target.value
@@ -17,9 +19,16 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const { name, email, message } = formData;
+    const { name, company, productType, email, message } = formData;
     const phoneNumber = '6281327782079';
-    const text = `Halo LPH UNUGHA, perkenalkan saya ${name} (${email}).\n\n${message}`;
+    
+    const text = `*FORMULIR PENDAFTARAN SERTIFIKASI HALAL LPH UNUGHA*\n\n` +
+      `Nama Lengkap: ${name}\n` +
+      `Nama Perusahaan/UMKM: ${company}\n` +
+      `Jenis Produk: ${productType}\n` +
+      `Email: ${email}\n\n` +
+      `Pesan Tambahan:\n${message}`;
+      
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
     
     window.open(whatsappUrl, '_blank');
@@ -43,7 +52,7 @@ export default function Contact() {
               <div className="relative z-10">
                 <h3 className="text-2xl font-serif font-bold mb-4">Butuh Bantuan?</h3>
                 <p className="text-white/80 mb-8 leading-relaxed">
-                  Tim kami siap membantu Anda memahami proses sertifikasi halal. Silakan isi formulir di samping atau hubungi kami langsung.
+                  Tim kami siap membantu Anda memahami proses sertifikasi halal. Silakan isi formulir pendaftaran di samping atau hubungi kami langsung jika ada pertanyaan.
                 </p>
                 
                 <div className="space-y-4">
@@ -69,7 +78,8 @@ export default function Contact() {
             </div>
 
             <div className="p-10">
-              <form className="space-y-6" onSubmit={handleSubmit}>
+              <h3 className="text-xl font-bold text-slate-900 mb-6">Formulir Pendaftaran</h3>
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">Nama Lengkap</label>
                   <input
@@ -81,6 +91,35 @@ export default function Contact() {
                     placeholder="Nama Anda"
                     required
                   />
+                </div>
+                <div>
+                  <label htmlFor="company" className="block text-sm font-medium text-slate-700 mb-1">Nama Perusahaan / UMKM</label>
+                  <input
+                    type="text"
+                    id="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-unugha-green focus:border-transparent outline-none transition-all"
+                    placeholder="Nama Usaha Anda"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="productType" className="block text-sm font-medium text-slate-700 mb-1">Jenis Produk</label>
+                  <select
+                    id="productType"
+                    value={formData.productType}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-unugha-green focus:border-transparent outline-none transition-all bg-white"
+                    required
+                  >
+                    <option value="">Pilih Jenis Produk</option>
+                    <option value="Makanan">Makanan</option>
+                    <option value="Minuman">Minuman</option>
+                    <option value="Kosmetik">Kosmetik</option>
+                    <option value="Obat-obatan">Obat-obatan</option>
+                    <option value="Jasa">Jasa / Lainnya</option>
+                  </select>
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">Email</label>
@@ -95,23 +134,22 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">Pesan</label>
+                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">Pesan / Pertanyaan (Opsional)</label>
                   <textarea
                     id="message"
-                    rows={4}
+                    rows={3}
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-unugha-green focus:border-transparent outline-none transition-all"
-                    placeholder="Tulis pesan Anda di sini..."
-                    required
+                    placeholder="Tulis pesan tambahan..."
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-3 bg-slate-900 text-white font-bold rounded-lg hover:bg-slate-800 transition-colors shadow-lg flex items-center justify-center gap-2"
+                  className="w-full py-3 bg-slate-900 text-white font-bold rounded-lg hover:bg-slate-800 transition-colors shadow-lg flex items-center justify-center gap-2 mt-2"
                 >
                   <Send className="w-5 h-5" />
-                  Kirim via WhatsApp
+                  Kirim Pendaftaran via WhatsApp
                 </button>
               </form>
             </div>
