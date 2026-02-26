@@ -32,9 +32,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-unugha-green rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg">
-              L
-            </div>
+            <img 
+              src="/logo-placeholder.svg" 
+              alt="Logo LPH UNUGHA" 
+              className="h-12 w-auto object-contain" 
+            />
             <div>
               <h1 className={`font-serif font-bold text-xl leading-none ${isScrolled ? 'text-slate-900' : 'text-slate-900 lg:text-white'}`}>
                 LPH UNUGHA

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <path d="M100 20C60 20 30 60 30 100C30 140 60 180 100 180C140 180 170 140 170 100C170 60 140 20 100 20Z" fill="#ffffff" stroke="#006837" stroke-width="5"/>
+  <path d="M70 70L70 130L130 130" stroke="#006837" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="160" font-family="serif" font-size="24" text-anchor="middle" fill="#006837" font-weight="bold">LPH UNUGHA</text>
+</svg>
